@@ -40,6 +40,12 @@ development server and starts listening for modifications in source files.
 
 #### How to Deploy
 
+If pushing subtree to gh-pages:
+
+```sh
+git subtree push --prefix build origin gh-pages
+```
+
 If [Travis CI](https://travis-ci.org/) is watching this repo, it will deploy
 the site automatically after each commit. Otherwise, you may deploy it manually
 by running:
